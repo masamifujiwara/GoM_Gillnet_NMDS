@@ -30,6 +30,8 @@ figure1 <- sites %>%
   geom_point(size=3) +
   geom_vline(xintercept = c(0), color = "grey70", linetype = 2) +
   geom_hline(yintercept = c(0), color = "grey70", linetype = 2) +
+  xlab("NMDS A1")+
+  ylab("NMDS A2")+
   coord_fixed(ratio = 1)
 
 SEASON <-data.frame(season=factor(c(1:2)),Season=factor(c("Spring","Fall"), level=c("Spring","Fall"))) 
@@ -42,6 +44,8 @@ figure2 <- sites %>%
   geom_point(size=3,alpha=0.5) +
   geom_vline(xintercept = c(0), color = "grey70", linetype = 2) +
   geom_hline(yintercept = c(0), color = "grey70", linetype = 2) +
+  xlab("NMDS A1")+
+  ylab("NMDS A3")+
   coord_fixed(ratio = 1)
 
 figure3 <- sites %>%
@@ -53,6 +57,8 @@ figure3 <- sites %>%
   geom_vline(xintercept = c(0), color = "grey70", linetype = 2) +
   geom_hline(yintercept = c(0), color = "grey70", linetype = 2) +
   coord_fixed(ratio = 1) +
+  xlab("NMDS A3")+
+  ylab("NMDS A2")+
   labs(color="Year")
 
 # Print this so that the height is 3 times greater than width
@@ -84,6 +90,8 @@ figure4 <-sites %>%
   geom_vline(xintercept = c(0), color = "grey70", linetype = 2) +
   geom_hline(yintercept = c(0), color = "grey70", linetype = 2) +
   coord_fixed(ratio = 1) +
+  xlab("NMDS A1")+
+  ylab("NMDS A3")+
   labs(color="Salinity")
 
 figure5 <-sites %>%
@@ -94,6 +102,8 @@ figure5 <-sites %>%
   geom_vline(xintercept = c(0), color = "grey70", linetype = 2) +
   geom_hline(yintercept = c(0), color = "grey70", linetype = 2) +
   coord_fixed(ratio = 1) +
+  xlab("NMDS A1")+
+  ylab("NMDS A3")+
   labs(color="% Fresh SP")
 
 figure6 <- sites %>%
@@ -104,6 +114,8 @@ figure6 <- sites %>%
   geom_vline(xintercept = c(0), color = "grey70", linetype = 2) +
   geom_hline(yintercept = c(0), color = "grey70", linetype = 2) +
   coord_fixed(ratio = 1) +
+  xlab("NMDS A1")+
+  ylab("NMDS A3")+
   labs(color="% Elasmo.")
 
 figure7 <- sites %>%
@@ -114,6 +126,8 @@ figure7 <- sites %>%
   geom_vline(xintercept = c(0), color = "grey70", linetype = 2) +
   geom_hline(yintercept = c(0), color = "grey70", linetype = 2) +
   coord_fixed(ratio = 1) +
+  xlab("NMDS A1")+
+  ylab("NMDS A3")+
   labs(color="% Gar")
 
 figures2<-ggarrange(figure4,figure5,figure7,
