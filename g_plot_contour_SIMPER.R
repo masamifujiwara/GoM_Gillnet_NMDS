@@ -111,6 +111,8 @@ NMDS_Plot <- function(k,sol,species, BAYS){
     geom_vline(xintercept = c(0), color = "grey70", linetype = 2) +
     geom_hline(yintercept = c(0), color = "grey70", linetype = 2) +
     coord_fixed(ratio = 1)+
+    xlab("NMDS B1")+
+    ylab("NMDS B2")+
     ggtitle(BAYS[k])
   return(figure2)
 }
