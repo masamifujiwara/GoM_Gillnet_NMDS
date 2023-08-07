@@ -34,9 +34,13 @@ for (k in c(1:8)){
     geom_hline(yintercept = c(0), color = "grey70", linetype = 2) +
     coord_fixed(ratio = 1) +
     ggtitle(BAYS[k])+
+    xlab("NMDS B1")+
+    ylab("NMDS B2")+
     labs(color="Year")
   
-  figure2[[k]] <- sites %>%
+  if (k==7){sites$NMDS2 = -sites$NMDS2}
+  
+    figure2[[k]] <- sites %>%
     select(link, NMDS1, NMDS2, NMDS3) %>%
     left_join(Env[[k]],by = c("link")) %>%
     left_join(SEASON, by=c("season")) %>%
@@ -45,6 +49,8 @@ for (k in c(1:8)){
     geom_vline(xintercept = c(0), color = "grey70", linetype = 2) +
     geom_hline(yintercept = c(0), color = "grey70", linetype = 2) +
     coord_fixed(ratio = 1)+
+    xlab("NMDS B1")+
+    ylab("NMDS B2")+
     ggtitle(BAYS[k])
   
 }
