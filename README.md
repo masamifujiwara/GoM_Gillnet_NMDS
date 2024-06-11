@@ -1,8 +1,8 @@
 Nonmetric multidimensional scaling analysis of fish data from estuaries along the Texas coast. 
-The work is associated with the following manuscript:
 
-Title:
-Changes in Species Compositions of Fish in the Bays of Northwestern Gulf of Mexico
+If you use this code, please cite our paper:
+
+Torres Ceron, M., M. Fujiwara, and F. Martinez-Andrade. 2023. Changes in species compositions of fish in the bays of the Northwestern Gulf of Mexico. Frontiers in Marine Science 10, <10.3389/fmars.2023.1274771>.
 
 Authors:
 Milton Torres Ceron1,2, Masami Fujiwara1†, Fernando Martinez-Andrade3
